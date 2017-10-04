@@ -10,7 +10,7 @@ v=zeros(256,1);
     end
     
     if(isinteger(im)~=true) % if false
-        disp("“Image matrix must be of type uint8");
+        disp("â€œImage matrix must be of type uint8");
         v=[];
         return;
     end
@@ -25,7 +25,7 @@ v=zeros(256,1);
     % Iterate through each column and row and populate V
     for row=1:size(im,1) % size(im, 1) -> number of rows
         for col=1:size(im,2) % size(im, 2) -> number of columns 
-            grayLevel = im(row, col); % tis might be of type double
+            grayLevel = im(row, col); % this might be of type double
             grayLevelInt = uint8(grayLevel); % convert to uint8 if not already
             v(grayLevelInt + 1) = v(grayLevelInt + 1) + 1; % Increment the number in v
         end
