@@ -18,8 +18,7 @@ v=zeros(256,1);
 %     for i=1:1:256 % creating a 1x256 vector
 %         v(i)=nnz(im==i-1);
 %     end
-%Provided two methods of soultion. unsure which option is more efficient,
-%But both option work
+%
 
     % Initialize vector v to zero
     v = zeros([1 256]);
